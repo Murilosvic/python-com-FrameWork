@@ -1,0 +1,35 @@
+# DESAFIO AULA 6 -  GOOGLE CLASS
+
+# Use dicionário, variáveis ou listas … 
+
+# Contexto:
+# Uma loja oferece um cupom especial. O cliente ganha o cupom se atender a pelo menos  das seguintes condições:
+
+# Se for VIP (responde "sim" ou "não")
+# Valor da compra acima de R$ 200
+# Primeira compra no mês (responder "sim" ou "nao")
+
+# Além disso, o cupom  pode ser aplicado se o cliente tiver  no histórico. 
+
+# Tarefa Receba:
+
+# vip (string "sim" ou "nao")
+# valor (float)
+# primeira_compra (string "sim" ou "nao")
+# Reclamação 
+
+# Determine se o cliente  ("Cupom liberado") ou  ("Sem cupom"),  (SEM IF , SEM LOOP, SEM FUNÇÃO)
+
+vip = "sim"
+valor = 250.0
+primeira_compra = "nao"
+reclamacao = "sim"
+
+condicao_compra = (vip == "sim") or (valor > 200) or (primeira_compra == "sim")
+condicao_reclamacao = (reclamacao == "sim")
+
+cupom = condicao_compra or condicao_reclamacao
+
+resultado = ["Sem cupom", "Cupom liberado"][cupom]
+
+print(resultado)
